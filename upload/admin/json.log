@@ -1,0 +1,17 @@
+Array
+(
+    [0] => Array
+        (
+            [category_id] => 49
+            [data_category_name] => Квадрокоптеры;Детские
+            [local_category] => 123
+        )
+
+    [1] => Array
+        (
+            [category_id] => 50
+            [data_category_name] => Квадрокоптеры;Детские;Нано
+            [local_category] => 
+        )
+
+)

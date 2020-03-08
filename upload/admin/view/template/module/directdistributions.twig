@@ -1,0 +1,115 @@
+{{ header }}{{ column_left }}
+<div id="content" xmlns="http://www.w3.org/1999/html">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-DirectDistributions" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+      </div>
+      <div class="panel-body">
+        <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form-DirectDistributions" class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
+            <div class="col-sm-10">
+              <select name="DirectDistributions_status" id="input-status" class="form-control">
+                {% if DirectDistributions_status %}
+                  <option value="1" selected="selected">{{ text_enabled }}</option>
+                  <option value="0">{{ text_disabled }}</option>
+                {% else %}
+                  <option value="1">{{ text_enabled }}</option>
+                  <option value="0" selected="selected">{{ text_disabled }}</option>
+                {% endif %}
+              </select>
+            </div>
+          </div>
+          <hr>
+          <p>Импорт товара от поставщика 
+            <a href="https://distributions.com.ua/about_company">"Прямые-дистрибуции"</a>
+          </p>
+          <p>Ссылка берется из раздела Прайсы -> Контент для Rozetka</p>
+          <ul>Импортируются:
+            <li>"Категории"</li>
+            <li>Группы атрибутов с наименованием как "Категории"</li>
+            <li>Товар</li>
+            <li>Атрибуты товара</li>
+            <li>Загружаются все картинки для товара</li>
+          </ul>
+          <p>Если товар по наименованию уже есть в магазине, проверяется его количество и цена. Если они отличаются, то товар обновляется.</p>
+          <hr>
+            <label class="col-sm-4 control-label" for="input-xmlurl">{{ entry_xmlurl }}</label>
+            <div class="col-sm-8">
+                {% DirectDistributions_xmlurl %}
+                  <input  class="form-control" type="text" name="DirectDistributions_xmlurl" id="input_xmlurl" value="{{ DirectDistributions_xmlurl }}">
+                {% else %}
+                  <input  class="form-control" type="text" name="DirectDistributions_xmlurl" id="input_xmlurl">
+                <?php } ?>
+            </div>
+          <div class="form-group">
+          </div>
+        </form>
+        <button class="btn btn-primary center-block" id="dd_import">Импорт</button>
+
+        <script type="text/javascript">
+
+          if( $('#input_xmlurl').val() == '' ){
+            $('#dd_import').attr('disabled', true);
+          } else {
+            $('#dd_import').attr('disabled', false);
+          }
+
+          $('#input_xmlurl').change( function(){
+
+            if( $('#input_xmlurl').val() == '' ){
+              $('#dd_import').attr('disabled', true);
+            } else {
+              $('#dd_import').attr('disabled', false);
+            }
+
+          });
+
+          $('#dd_import').click(function () {
+            console.log('onClick');
+            $('#dd_import').html('Ждите...');
+            $('#dd_import').attr('disabled', true);
+            console.log(user_token);
+            $.ajax({
+              url: 'index.php?route=extension/module/DirectDistributions/import&user_token=' + user_token,
+              dataType: 'html',
+              success: function(htmlText) {
+                $('#messages').append(htmlText);
+                $('#dd_import').html('Импорт');
+                $('#dd_import').attr('disabled', false);
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+            });
+
+          });
+        </script>
+        <hr>
+        {% if messages %}
+            <div class='alert alert-info' id='messages'>{{ messages }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{{ footer }}

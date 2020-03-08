@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8337936f-f3dd-491a-b71c-a233568c4fcd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="upload" />
+  </component>
+  <component name="ProjectId" id="1WKZt40EgCEzwEdpeKIWUdtOyEM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8337936f-f3dd-491a-b71c-a233568c4fcd" name="Default Changelist" comment="" />
+      <created>1578900459747</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578900459747</updated>
+      <workItem from="1578900465109" duration="42000" />
+      <workItem from="1578900531580" duration="2838000" />
+      <workItem from="1579586708521" duration="99000" />
+      <workItem from="1579587010412" duration="11330000" />
+      <workItem from="1579934372658" duration="7297000" />
+      <workItem from="1580018394102" duration="5509000" />
+      <workItem from="1580112712599" duration="58000" />
+      <workItem from="1580114714045" duration="875000" />
+      <workItem from="1580121734153" duration="1787000" />
+      <workItem from="1580123883931" duration="8082000" />
+      <workItem from="1580200454885" duration="9309000" />
+      <workItem from="1580302821057" duration="4866000" />
+      <workItem from="1580361483669" duration="3527000" />
+      <workItem from="1580386500147" duration="10802000" />
+      <workItem from="1580535486338" duration="9751000" />
+      <workItem from="1580571828240" duration="1446000" />
+      <workItem from="1580575453689" duration="2248000" />
+      <workItem from="1580626595462" duration="358000" />
+      <workItem from="1580727853391" duration="15754000" />
+      <workItem from="1580805221996" duration="1976000" />
+      <workItem from="1580885365637" duration="621000" />
+      <workItem from="1581585845984" duration="11605000" />
+      <workItem from="1581666842460" duration="750000" />
+      <workItem from="1581667787208" duration="15336000" />
+      <workItem from="1581765059029" duration="1574000" />
+      <workItem from="1581767168088" duration="301000" />
+      <workItem from="1582205821499" duration="1057000" />
+      <workItem from="1582543665454" duration="2963000" />
+      <workItem from="1582607525900" duration="360000" />
+      <workItem from="1582614024228" duration="3346000" />
+      <workItem from="1582698609487" duration="2378000" />
+      <workItem from="1582786049565" duration="9000" />
+      <workItem from="1582786137985" duration="4000" />
+      <workItem from="1582786412143" duration="33000" />
+      <workItem from="1582786519289" duration="519000" />
+      <workItem from="1582787453913" duration="301000" />
+      <workItem from="1582787836850" duration="2452000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="219" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580112749355">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="320" y="219" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.984@0.0.1280.984" timestamp="1580112749355" />
+    <state x="143" y="123" key="SettingsEditor" timestamp="1582788080528">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="143" y="123" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1582788080528" />
+    <state x="153" y="38" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1580575558766" />
+    <state x="335" y="314" key="com.intellij.ide.util.TipDialog" timestamp="1582787837639">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="335" y="314" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1582787837639" />
+    <state x="356" y="232" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1582607529223" />
+    <state x="358" y="263" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1581767168137" />
+    <state x="293" y="27" width="770" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579430601855">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="293" y="27" width="770" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1579430601855" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1580212499564">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1580212499564" />
+  </component>
+</project>
